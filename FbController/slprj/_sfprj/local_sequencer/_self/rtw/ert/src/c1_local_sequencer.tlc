@@ -1,0 +1,67 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  1 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   7 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_c1_local_sequencer"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_FB_SELECT"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "FB_SELECT"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_FETCH"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "FETCH"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_FB_EXECUTE"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "FB_EXECUTE"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_ERROR_STATE"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "ERROR_STATE"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_WRITE"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "WRITE"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_FB_DONE"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "FB_DONE"\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

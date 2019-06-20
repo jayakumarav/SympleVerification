@@ -1,0 +1,50 @@
+
+07-Mar-2019 18:38:11
+Checking compatibility for property proving: model 'local_sequencer'
+Compiling model...done
+Checking compatibility...done
+
+07-Mar-2019 18:38:18
+'local_sequencer' is compatible for property proving with Simulink Design Verifier.
+
+
+Proving properties using compatibility results from 07-Mar-2019 18:38:18...
+
+VALID
+Local Sequencer Subsystem/Verification Subsystem/Proof Objective2
+Objective: T
+Analysis Time = 00:00:20
+
+VALID
+Local Sequencer Subsystem/Verification Subsystem/Proof Objective1
+Objective: T
+Analysis Time = 00:00:21
+
+VALID
+Local Sequencer Subsystem/Verification Subsystem/Proof Objective3
+Objective: T
+Analysis Time = 00:00:22
+
+FALSIFIED
+Local Sequencer Subsystem/Verification Subsystem/Proof Objective4
+Objective: T
+Analysis Time = 00:00:29
+
+FALSIFIED
+Local Sequencer Subsystem/Verification Subsystem/Proof Objective5
+Objective: T
+Analysis Time = 00:00:29
+
+
+07-Mar-2019 18:38:48
+
+Completed normally.
+
+Generating output files:
+
+    Data file:
+    C:\Users\gauthamsm\Documents\MATLAB\SympleVerification\FbController\sldv_output\local_sequencer\local_sequencer_sldvdata1.mat
+
+07-Mar-2019 18:38:52
+Results generation completed.
+
